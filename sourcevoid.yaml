@@ -1,14 +1,3 @@
 runtime: dart
-version: latest
-
-build:
-  - remove-pub-dir
-  - pub get
-
+version: 1.17.1
 start: dart bin/server.snapshot
-
-tasks:
-  - name: remove-pub-dir
-    runtime: dart
-    version: latest
-    cmd: rm -rf .pub
